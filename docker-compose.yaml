@@ -1,0 +1,10 @@
+version: '3'
+services:
+  mongodb:
+    image: mongo:5.0
+    container_name: mongodb
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=trafficApp
+      - MONGO_INITDB_ROOT_PASSWORD=trafficApp
+    ports:
+      - 27017:27017
